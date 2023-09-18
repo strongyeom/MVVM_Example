@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26E41A4B2AB8239E004AEF2B /* Ext+TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E41A4A2AB8239E004AEF2B /* Ext+TextField.swift */; };
+		26E41A4D2AB82455004AEF2B /* TextFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E41A4C2AB82455004AEF2B /* TextFieldViewModel.swift */; };
+		26EDB35B2AB19CFB00964C9C /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EDB35A2AB19CFB00964C9C /* Observable.swift */; };
 		26F9356B2AB04625005EAAC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F9356A2AB04625005EAAC9 /* AppDelegate.swift */; };
 		26F9356D2AB04625005EAAC9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F9356C2AB04625005EAAC9 /* SceneDelegate.swift */; };
 		26F9356F2AB04625005EAAC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F9356E2AB04625005EAAC9 /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26E41A4A2AB8239E004AEF2B /* Ext+TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+TextField.swift"; sourceTree = "<group>"; };
+		26E41A4C2AB82455004AEF2B /* TextFieldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewModel.swift; sourceTree = "<group>"; };
+		26EDB35A2AB19CFB00964C9C /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		26F935672AB04625005EAAC9 /* MVVM_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26F9356A2AB04625005EAAC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26F9356C2AB04625005EAAC9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,10 +65,13 @@
 				26F9356A2AB04625005EAAC9 /* AppDelegate.swift */,
 				26F9356C2AB04625005EAAC9 /* SceneDelegate.swift */,
 				26F9356E2AB04625005EAAC9 /* ViewController.swift */,
+				26E41A4C2AB82455004AEF2B /* TextFieldViewModel.swift */,
+				26EDB35A2AB19CFB00964C9C /* Observable.swift */,
 				26F935702AB04625005EAAC9 /* Main.storyboard */,
 				26F935732AB04627005EAAC9 /* Assets.xcassets */,
 				26F935752AB04627005EAAC9 /* LaunchScreen.storyboard */,
 				26F935782AB04627005EAAC9 /* Info.plist */,
+				26E41A4A2AB8239E004AEF2B /* Ext+TextField.swift */,
 			);
 			path = MVVM_Example;
 			sourceTree = "<group>";
@@ -138,6 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26E41A4B2AB8239E004AEF2B /* Ext+TextField.swift in Sources */,
+				26EDB35B2AB19CFB00964C9C /* Observable.swift in Sources */,
+				26E41A4D2AB82455004AEF2B /* TextFieldViewModel.swift in Sources */,
 				26F9356F2AB04625005EAAC9 /* ViewController.swift in Sources */,
 				26F9356B2AB04625005EAAC9 /* AppDelegate.swift in Sources */,
 				26F9356D2AB04625005EAAC9 /* SceneDelegate.swift in Sources */,
