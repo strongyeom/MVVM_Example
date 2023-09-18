@@ -58,28 +58,42 @@ class ViewController: UIViewController {
         viewModel.emailvaildation.bind { bool in
             if bool {
                 self.emailVaildation.image = UIImage(systemName: "checkmark.circle.fill")
+                self.emailVaildation.tintColor = .blue
             } else {
                 self.emailVaildation.image = UIImage(systemName: "checkmark.circle")
+                self.emailVaildation.tintColor = .red
             }
+            
         }
         
         viewModel.passwordvaildation.bind { bool in
             if bool {
                 self.passwordVaildation.image = UIImage(systemName: "checkmark.circle.fill")
+                self.passwordVaildation.tintColor = .blue
             } else {
                 self.passwordVaildation.image = UIImage(systemName: "checkmark.circle")
+                self.passwordVaildation.tintColor = .red
             }
+            
         }
+        
+        viewModel.isSignup.bind { bool in
+            self.signupBtn.isEnabled = bool
+            
+        }
+      
     }
     
     @objc func emailTextFieldChanged() {
         viewModel.email.value = emailTextField.text!
         viewModel.settingEmail()
+        viewModel.settingIsSignup()
     }
     
     @objc func passWordTextFieldChanged() {
         viewModel.password.value = passwordTextField.text!
         viewModel.settingPassword()
+        viewModel.settingIsSignup()
     }
     
 

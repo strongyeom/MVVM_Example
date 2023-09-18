@@ -16,6 +16,7 @@ class TextFieldViewModel {
     var recommend:Observable<String?> = Observable("")
     var emailvaildation = Observable(false)
     var passwordvaildation = Observable(false)
+    var isSignup = Observable(false)
     
     func settingEmail() {
         guard let text = email.value else { return }
@@ -44,6 +45,15 @@ class TextFieldViewModel {
         }
         password.value = "\(convertString)"
         passwordvaildation.value = true
+       
+    }
+    
+    func settingIsSignup() {
+        if emailvaildation.value == true && passwordvaildation.value ==  true {
+            isSignup.value = true
+        } else {
+            isSignup.value = false
+        }
     }
     
 }
